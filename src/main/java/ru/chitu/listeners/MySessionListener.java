@@ -1,11 +1,11 @@
 package ru.chitu.listeners;
 
-import jakarta.servlet.annotation.WebFilter;
+import jakarta.servlet.annotation.WebListener;
 import jakarta.servlet.http.HttpSessionEvent;
 import jakarta.servlet.http.HttpSessionListener;
 
 // Простая реализация регистрации событий, когда сеанс создается или уничтожается.
-@WebFilter
+@WebListener
 public class MySessionListener implements HttpSessionListener {
 
     @Override
